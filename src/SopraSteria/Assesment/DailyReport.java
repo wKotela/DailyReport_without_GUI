@@ -15,7 +15,7 @@ public class DailyReport {
     /**
      * Valid filepath of existing .csv file must be specified in the DailyReport constructor.
      *
-     * @param inputFilepath of existing .csv file must be specified in a valid format, f.e. C:\\Users\\PC\\Downloads\\TestX.csv .
+     * @param inputFilepath of existing .csv file must be specified in a valid format, f.e. C:\\Users\\PC\\Downloads\\ItemX.csv .
      *                      Each row of the .csv file must start with <b>buy/supply</b> entry (not case-sensitive), then a coma separated value.
      *                      Invalid file contents will make <param>outputData</param> to contain only information about invalid input.
      */
@@ -59,21 +59,21 @@ public class DailyReport {
                 else {
                     inputFilepathValid = false;
                     outputData = "Wrong file contents, please choose a file with each row starting with buy/supply entry, then a coma separated integer value.";
-                    System.out.println(outputData);
+                    System.out.println(outputData + " (" + inputFilepath + ")");
                 }
             }
             catch (IOException ex) {
                 ex.printStackTrace();
                 inputFilepathValid = false;
                 outputData = "Wrong input filepath, please specify a valid one.";
-                System.out.println(outputData);
+                System.out.println(outputData + " (" + inputFilepath + ")");
             }
         }
         //Case when a file is specified properly, but it's not .csv
         else {
             inputFilepathValid = false;
             outputData = "Wrong input file extension, please choose a proper input file with .csv extension.";
-            System.out.println(outputData);
+            System.out.println(outputData + " (" + inputFilepath + ")");
         }
     }
 
