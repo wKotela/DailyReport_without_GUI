@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e6df87d-1ba7-4576-88a9-af75c993d434" name="Changes" comment="Added parametrized tests in JUnit4 for two cases, expansion of few test cases is required" />
+    <list default="true" id="3e6df87d-1ba7-4576-88a9-af75c993d434" name="Changes" comment="Changed project directory">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SSteria/Assesment/DailyReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SSteria/Assesment/DailyReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SSteria/Assesment/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SSteria/Assesment/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,7 +104,20 @@
       <recent name="SopraSteria.Assesment" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DailyReportTest">
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SSteria.Assesment.Main" />
+      <module name="DailyReport_without_GUI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SSteria.Assesment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="SopraSteria.Assesment.Main" />
       <module name="DailyReport_without_GUI" />
@@ -128,6 +145,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="JUnit.DailyReportTest" />
         <item itemvalue="Application.Main" />
       </list>
@@ -149,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651620016579</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Changed project directory">
+      <created>1651620271875</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1651620271875</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,7 +190,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added parametrized tests in JUnit4 for two cases, expansion of few test cases is required" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added parametrized tests in JUnit4 for two cases, expansion of few test cases is required" />
+    <MESSAGE value="Changed project directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed project directory" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DailyReport_without_GUI$Main.ic" NAME="Main Coverage Results" MODIFIED="1651597104906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

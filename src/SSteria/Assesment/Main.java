@@ -21,7 +21,7 @@ public class Main {
                 System.out.println("Please specify filepath of the output .csv report file: (f.e.: C:\\Users\\PC\\report.csv)");
                 report.writeReportToFile(userInput.nextLine());
             }
-            System.out.println("Do you want to prepare a report from another input file? (Y/N or any other key)");
+            System.out.println("Do you want to prepare a report from another input file? (Y/N or any other)");
             if(userInput.nextLine().toLowerCase().equals("y")){
                 repeatReportGeneration = true;
             }

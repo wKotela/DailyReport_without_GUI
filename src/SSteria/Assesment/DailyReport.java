@@ -59,21 +59,26 @@ public class DailyReport {
                 else {
                     inputFilepathValid = false;
                     outputData = "Wrong file contents, please choose a file with each row starting with buy/supply entry, then a coma separated integer value.";
-                    System.out.println(outputData + " (" + inputFilepath + ")");
+                    System.out.println(outputData + " (selected filepath: " + inputFilepath + ")");
                 }
             }
             catch (IOException ex) {
                 ex.printStackTrace();
                 inputFilepathValid = false;
                 outputData = "Wrong input filepath, please specify a valid one.";
-                System.out.println(outputData + " (" + inputFilepath + ")");
+                System.out.println(outputData + " (selected filepath: " + inputFilepath + ")");
             }
         }
         //Case when a file is specified properly, but it's not .csv
+        else if(inputFilepath.length() == 0){
+            inputFilepathValid = false;
+            outputData = "No filepath selected, please choose a proper input file with .csv extension.";
+            System.out.println(outputData + " (selected filepath: empty)");
+        }
         else {
             inputFilepathValid = false;
             outputData = "Wrong input file extension, please choose a proper input file with .csv extension.";
-            System.out.println(outputData + " (" + inputFilepath + ")");
+            System.out.println(outputData + " (selected filepath: " + inputFilepath + ")");
         }
     }
 
@@ -110,7 +115,7 @@ public class DailyReport {
      * @param outputFilepath indicates filepath of newly created report, f.e. C:\\Users\\PC\\Downloads\\report.csv .If indicated filepath already exists,
      *                       it will be overwritten - user must ensure it won't overwrite important existing documents. Current user also must have an OS
      *                       permission to write in a specified localization.
-     * @return <b>-1</b> - if output filepath wasn't specified correctly
+     * @return <b>-1</b> - if output filepath wasn't specified correctly and write to file cannot be performed
      * @return <b>0</b> - if input filepath wasn't specified correctly and write to file cannot be performed
      * @return <b>1</b> - if write to file completed successfully
      */
