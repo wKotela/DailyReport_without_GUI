@@ -1,4 +1,4 @@
-package SopraSteria.Assesment;
+package SSteria.Assesment;
 
 import java.io.*;
 

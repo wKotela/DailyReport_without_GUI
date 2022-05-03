@@ -1,4 +1,4 @@
-package SopraSteria.Assesment;
+package SSteria.Assesment;
 
 import org.junit.Rule;
 import org.junit.rules.TemporaryFolder;
