@@ -21,16 +21,16 @@ public class DailyReportTest {
     private String testInputFilepath;
     private String testOutputFilepath;
     private String expectedOutputString;
-    private String expectedOutputContents;
+    private String expectedOutputFileContents;
     private boolean expectedInputFilepathValidity;
     private int expectedWriteReturnCode;
 
-    public DailyReportTest(String testInputFilepath, String testOutputFilepath, String expectedOutputString, String expectedOutputContents,
+    public DailyReportTest(String testInputFilepath, String testOutputFilepath, String expectedOutputString, String expectedOutputFileContents,
                            boolean expectedInputFilepathValidity, int expectedWriteReturnCode) {
         this.testInputFilepath = testInputFilepath;
         this.testOutputFilepath = testOutputFilepath;
         this.expectedOutputString = expectedOutputString;
-        this.expectedOutputContents = expectedOutputContents;
+        this.expectedOutputFileContents = expectedOutputFileContents;
         this.expectedInputFilepathValidity = expectedInputFilepathValidity;
         this.expectedWriteReturnCode = expectedWriteReturnCode;
     }
@@ -89,7 +89,7 @@ public class DailyReportTest {
             e.printStackTrace();
         }
         finally {
-            assertEquals(expectedOutputContents, contents);
+            assertEquals(expectedOutputFileContents, contents);
         }
     }
 }

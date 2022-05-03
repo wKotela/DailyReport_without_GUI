@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e6df87d-1ba7-4576-88a9-af75c993d434" name="Changes" comment="Changed project directory">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SSteria/Assesment/DailyReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SSteria/Assesment/DailyReport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SSteria/Assesment/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SSteria/Assesment/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="3e6df87d-1ba7-4576-88a9-af75c993d434" name="Changes" comment="Minor correction of printed texts at construction of DailyReport instance" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -174,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651620271875</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Minor correction of printed texts at construction of DailyReport instance">
+      <created>1651621243852</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1651621243852</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -191,7 +194,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added parametrized tests in JUnit4 for two cases, expansion of few test cases is required" />
     <MESSAGE value="Changed project directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed project directory" />
+    <MESSAGE value="Minor correction of printed texts at construction of DailyReport instance" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor correction of printed texts at construction of DailyReport instance" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DailyReport_without_GUI$Main.ic" NAME="Main Coverage Results" MODIFIED="1651597104906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
