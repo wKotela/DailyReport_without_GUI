@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="DailyReport_without_GUI:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e6df87d-1ba7-4576-88a9-af75c993d434" name="Changes" comment="Added more test cases">
+    <list default="true" id="3e6df87d-1ba7-4576-88a9-af75c993d434" name="Changes" comment="Added additional comments">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/DailyReport_without_GUI_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SSteria/Assesment/DailyReportTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SSteria/Assesment/DailyReportTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SSteria/Assesment/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SSteria/Assesment/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +96,8 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/production/DailyReport_without_GUI/META-INF" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -104,7 +109,7 @@
       <recent name="SopraSteria.Assesment" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DailyReportTest (1)">
+  <component name="RunManager" selected="JAR Application.DailyReport_without_GUI.jar">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SSteria.Assesment.Main" />
       <module name="DailyReport_without_GUI" />
@@ -157,6 +162,12 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="DailyReport_without_GUI.jar" type="JarApplication">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/DailyReport_without_GUI_jar/DailyReport_without_GUI.jar" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
@@ -211,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651668652167</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added additional comments">
+      <created>1651669471830</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1651669471830</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -232,7 +250,8 @@
     <MESSAGE value="Minor correction of printed texts at construction of DailyReport instance" />
     <MESSAGE value="Minor name changes of variables at DailyReportTest.java" />
     <MESSAGE value="Added more test cases" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more test cases" />
+    <MESSAGE value="Added additional comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added additional comments" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DailyReport_without_GUI$Main.ic" NAME="Main Coverage Results" MODIFIED="1651597104906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

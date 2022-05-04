@@ -13,8 +13,6 @@ public class Main {
         boolean repeatReportGeneration = true;
         Scanner userInput = new Scanner(System.in);
         while(repeatReportGeneration) {
-            //Clearing console screen
-            clearScreen();
             System.out.println("Please specify filepath of the input .csv file: (f.e.: C:\\Users\\PC\\input.csv)");
             DailyReport report = new DailyReport(userInput.nextLine());
             if(report.isInputFilepathValid()){
@@ -29,11 +27,5 @@ public class Main {
                 repeatReportGeneration = false;
             }
         }
-    }
-
-    //Method for clearing console screen at the start of each program loop
-    public static void clearScreen() {
-        System.out.print("\033[H\033[2J");
-        System.out.flush();
     }
 }
