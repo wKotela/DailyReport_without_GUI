@@ -37,7 +37,7 @@ public class DailyReportTest {
     }
 
     @Parameterized.Parameters
-    public static Collection<Object[]> testCases() {
+    public static Collection<Object[]> testConditions() {
         return Arrays.asList(new Object[][]{
                 {"testInput1.csv","temp\\testOutput1.csv","supply,1812\nbuy,1455\nresult,357","supply,1812\nbuy,1455\nresult,357",true,1}, //1812 - 1455 - result 357, valid output filepath
                 {"testInput1.csv","temp\\testOutput1","supply,1812\nbuy,1455\nresult,357","",true,-1}, //wrong output filepath
@@ -48,14 +48,19 @@ public class DailyReportTest {
                 {"testInput3.csv","temp\\testOutput3.csv","supply,6282\nbuy,0\nresult,6282","supply,6282\nbuy,0\nresult,6282",true,1}, //6282 - 0 - result 6282
                 {"testInput4.csv","temp\\testOutput4.csv","supply,2946368\nbuy,92323\nresult,2854045","supply,2946368\nbuy,92323\nresult,2854045",true,1}, //2946368 - 92323 - result 2854045
                 {"testInput5.csv","temp\\testOutput5.csv","Wrong file contents, please choose a file with each row starting with buy/supply entry, then a coma separated integer value.","",false,0}, //wrong file contents
+                /*
+                Two test conditions below have to be modified according to the current user's input file location/contents or ignored
+                 */
                 {"C:\\Java\\ItemX.csv","temp\\ItemXOutput.csv","supply,172\nbuy,112\nresult,60","supply,172\nbuy,112\nresult,60",true,1}, //172 - 112 - result 60, selecting a file by specifying full input filepath
                 {"C:\\Java\\ItemY.csv","temp\\ItemYOutput.csv","supply,435\nbuy,279\nresult,156","supply,435\nbuy,279\nresult,156",true,1}, //435 - 279 - result 156, selecting a file by specifying full input filepath
         });
     }
 
+    //Creating a temporary folder to enable simple delete of test output reports
     @Rule
     public TemporaryFolder folder = new TemporaryFolder();
 
+    //Creating a new report object before each test case
     @org.junit.Before
     public void setup(){
         report = new DailyReport(testInputFilepath);
@@ -76,6 +81,7 @@ public class DailyReportTest {
         assertEquals(expectedInputFilepathValidity,report.isInputFilepathValid());
     }
 
+    //Checking validity of writeReportToFile method return code
     @org.junit.Test
     public void writeReportToFileReturnCode() throws IOException{
         folder.newFolder("temp");
@@ -83,6 +89,7 @@ public class DailyReportTest {
         assertEquals(expectedWriteReturnCode,writeResult);
     }
 
+    //Checking validity of writeReportToFile method output contents
     @org.junit.Test
     public void writeReportToFileContentsCheck() throws IOException{
         folder.newFolder("temp");

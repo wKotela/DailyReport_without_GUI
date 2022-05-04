@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * It's a program which enables the user to generate a report from .csv supply/buy data and write it to specified location
- * using DailyReport class. User specifies input and output file location by typing filepaths into the console.
+ * using DailyReport class. User specifies input and output file location by typing input/output filepaths into the console.
  * @author Wiktor Kotela
  */
 public class Main {
@@ -31,6 +31,7 @@ public class Main {
         }
     }
 
+    //Method for clearing console screen at the start of each program loop
     public static void clearScreen() {
         System.out.print("\033[H\033[2J");
         System.out.flush();
