@@ -16,10 +16,10 @@ public class Main {
             System.out.println("Please specify filepath of the input .csv file: (f.e.: C:\\Users\\PC\\input.csv)");
             DailyReport report = new DailyReport(userInput.nextLine());
             if(report.isInputFilepathValid()){
-                System.out.println("Please specify filepath of the output .csv report file: (f.e.: C:\\Users\\PC\\report.csv)");
+                System.out.println("Please specify write filepath of the output .csv report file: (f.e.: C:\\Users\\PC\\report.csv)");
                 report.writeReportToFile(userInput.nextLine());
             }
-            System.out.println("Do you want to prepare a report from another input file? (Y/N or any other)");
+            System.out.println("Would you like to prepare a report from another input file? (Y/N or any other)");
             if(userInput.nextLine().toLowerCase().equals("y")){
                 repeatReportGeneration = true;
             }

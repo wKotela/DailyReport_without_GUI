@@ -63,17 +63,16 @@ public class DailyReport {
                 }
             }
             catch (IOException ex) {
-                ex.printStackTrace();
                 inputFilepathValid = false;
                 outputData = "Wrong input filepath, please specify a valid one.";
-                System.out.println(outputData + " (selected filepath: " + inputFilepath + ")");
+                System.out.println(outputData + " (" + ex.getMessage() + ")");
             }
         }
         //Case when a file is specified properly, but it's not .csv
         else if(inputFilepath.length() == 0){
             inputFilepathValid = false;
             outputData = "No filepath selected, please choose a proper input file with .csv extension.";
-            System.out.println(outputData + " (selected filepath: empty)");
+            System.out.println(outputData);
         }
         else {
             inputFilepathValid = false;
@@ -129,8 +128,7 @@ public class DailyReport {
                     return 1;
                 }
                 catch (IOException ex) {
-                    System.out.println("Write failed.\nWrong output filepath, please specify a valid one, ending with .csv extension.");
-                    ex.printStackTrace();
+                    System.out.println("Write failed.\nWrong output filepath, please specify a valid one, ending with .csv extension." + " (" + ex.getMessage()+")");
                     return -1;
                 }
             }
