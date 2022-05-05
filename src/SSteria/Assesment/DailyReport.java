@@ -85,7 +85,11 @@ public class DailyReport {
         return inputFilepath;
     }
 
-    public String toString() {
+    public String toString(){
+        return "[" + this.getInputFilepath() + "\n" + outputData + "]";
+    }
+
+    public String getOutputData() {
         return outputData;
     }
 

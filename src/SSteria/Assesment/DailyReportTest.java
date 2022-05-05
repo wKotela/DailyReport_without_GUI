@@ -72,8 +72,8 @@ public class DailyReportTest {
     }
 
     @org.junit.Test
-    public void testToString() {
-        assertEquals(expectedOutputString,report.toString());
+    public void testOutputData() {
+        assertEquals(expectedOutputString,report.getOutputData());
     }
 
     @org.junit.Test
