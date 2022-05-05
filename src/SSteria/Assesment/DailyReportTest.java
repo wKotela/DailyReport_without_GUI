@@ -35,7 +35,7 @@ public class DailyReportTest {
         this.expectedInputFilepathValidity = expectedInputFilepathValidity;
         this.expectedWriteReturnCode = expectedWriteReturnCode;
     }
-
+    //Collection of test condition parameters
     @Parameterized.Parameters
     public static Collection<Object[]> testConditions() {
         return Arrays.asList(new Object[][]{

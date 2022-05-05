@@ -3,7 +3,7 @@ package SSteria.Assesment;
 import java.io.*;
 
 /**
- * DailyReport class enables the user to load buy/supply data from .csv file and then save a summary report to a .csv file.
+ * <class>DailyReport</class> class enables the user to load buy/supply data from .csv file and then save a summary report to a .csv file.
  * @author Wiktor Kotela
  */
 
